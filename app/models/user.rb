@@ -1,5 +1,4 @@
 class User < ApplicationRecord
-  belongs_to :spot
   has_many :microposts, dependent: :destroy
   has_many :active_relationships, class_name:  "Relationship",
                                   foreign_key: "follower_id",
@@ -12,6 +11,7 @@ class User < ApplicationRecord
   attr_accessor :remember_token, :activation_token
   before_save :downcase_email
   before_create :create_activation_digest
+  before_create :create_my_address
   validates :name,  presence: true, length: { maximum: 50 }
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   validates :email, presence: true, length: { maximum: 255 },
@@ -66,7 +66,7 @@ class User < ApplicationRecord
   end
 
   # アクセスしているIPアドレスを返す
-  def my_address
+  def create_my_address
    udp = UDPSocket.new
    # クラスBの先頭アドレス,echoポート 実際にはパケットは送信されない。
    udp.connect("128.0.0.0", 7)
@@ -87,4 +87,15 @@ class User < ApplicationRecord
       self.activation_token  = User.new_token
       self.activation_digest = User.digest(activation_token)
     end
+
+  # アクセスしているIPアドレスを返す
+  def create_my_address
+   udp = UDPSocket.new
+   # クラスBの先頭アドレス,echoポート 実際にはパケットは送信されない。
+   udp.connect("128.0.0.0", 7)
+   adrs = Socket.unpack_sockaddr_in(udp.getsockname)[1]
+   udp.close
+   self.address = adrs
+  end
 end
+

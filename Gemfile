@@ -4,6 +4,7 @@ git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
 end
+gem 'google-cloud-firestore'
 gem 'postgresql'
 gem 'jquery-ui-rails'
 gem 'jquery-rails'
