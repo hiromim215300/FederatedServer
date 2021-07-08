@@ -80,12 +80,14 @@ before_action :update_address
     end
 
     def update_address
-      udp = UDPSocket.new
-      udp.connect("128.0.0.0", 7)
-      adrs = Socket.unpack_sockaddr_in(udp.getsockname)[1]
-      @user = User.find(params[:id])
-      @user.address = adrs
-      @user.save 
+      if logged_in?
+         udp = UDPSocket.new
+         udp.connect("128.0.0.0", 7)
+         adrs = Socket.unpack_sockaddr_in(udp.getsockname)[1]
+         @user = User.find(params[:id])
+         @user.address = adrs
+         @user.save
+      end 
     end
 
 end
