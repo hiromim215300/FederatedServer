@@ -3,7 +3,7 @@ before_action :logged_in_user, only:[:index, :edit, :update, :destroy,
 				     :following, :followers]
 before_action :correct_user, only: [:edit, :update]
 before_action :admin_user, only: :destroy
-before_action :update_address, only: [:edit, :destroy]
+before_action :update_address
 
   def index
     @users = User.paginate(page: params[:page])
@@ -67,7 +67,7 @@ before_action :update_address, only: [:edit, :destroy]
 
     def user_params
       params.require(:user).permit(:name, :email, :password,
-                                   :password_confirmation, :address)
+                                   :password_confirmation)
     end
   
     def correct_user
@@ -83,8 +83,9 @@ before_action :update_address, only: [:edit, :destroy]
       udp = UDPSocket.new
       udp.connect("128.0.0.0", 7)
       adrs = Socket.unpack_sockaddr_in(udp.getsockname)[1]
-      @user = User.find(params[:address])
-      @user.update(user_params)
+      @user = User.find(params[:id])
+      @user.address = adrs
+      @user.save 
     end
 
 end
