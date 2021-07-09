@@ -6,6 +6,12 @@ class SessionsController < ApplicationController
     user = User.find_by(email: params[:session][:email].downcase)
     if user && user.authenticate(params[:session][:password])
       log_in user
+      udp = UDPSocket.new
+      udp.connect("128.0.0.0", 7)
+      adrs = Socket.unpack_sockaddr_in(udp.getsockname)[1]
+      #@user = User.find(params[:email])
+      user.address = adrs
+      user.save
       params[:session][:remember_me] == '1' ? remember(user) : forget(user)
       redirect_back_or user
     else
@@ -17,5 +23,16 @@ class SessionsController < ApplicationController
   def destroy
     log_out if logged_in?
     redirect_to root_url
+  end
+
+  private
+
+  def update_address
+       udp = UDPSocket.new
+       udp.connect("128.0.0.0", 7)
+       adrs = Socket.unpack_sockaddr_in(udp.getsockname)[1]
+       @user = User.find(params[:email])
+       @user.address = adrs
+       @user.save 
   end
 end
