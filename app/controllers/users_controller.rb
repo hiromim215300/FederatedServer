@@ -1,4 +1,10 @@
 class UsersController < ApplicationController
+require "google/cloud/firestore"
+firestore = Google::Cloud::Firestore.new(
+  project_id: "sampleapp-735a6",
+  credentials: "config/firebase_auth.json"
+)
+
 before_action :logged_in_user, only:[:index, :edit, :update, :destroy,
 				     :following, :followers]
 before_action :correct_user, only: [:edit, :update]
@@ -21,6 +27,7 @@ before_action :admin_user, only: :destroy
   def create
     @user = User.new(user_params)
     if @user.save
+      set_user
       log_in @user
       flash[:success] = "Welcome to the Sample App!"
       redirect_to @user
@@ -63,6 +70,28 @@ before_action :admin_user, only: :destroy
     render 'show_follow'
   end
 
+    def set_user
+      firestore = Google::Cloud::Firestore.new(
+      project_id: "sampleapp-735a6",
+      credentials: "config/firebase_auth.json"
+      )
+      data = {
+          name: @user.name,
+          email: @user.email,
+          address: @user.address,
+          password_digest: @user.password_digest,
+          remember_digest: @user.remember_digest,
+          activated: @user.activated,
+          activated_at: @user.activated_at,
+          activation_digest: @user.activation_digest,
+          updated_at: @user.updated_at,
+          created_at: @user.created_at,
+          admin: @user.admin
+        }
+      users_ref = firestore.col controller_path
+      added_doc_ref = users_ref.add data
+    end
+
   private
 
     def user_params
@@ -89,5 +118,4 @@ before_action :admin_user, only: :destroy
          @user.save
       end 
     end
-
 end
