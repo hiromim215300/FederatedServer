@@ -1,13 +1,14 @@
 class ServersController < ApplicationController
-
   def index
    firestore = Google::Cloud::Firestore.new(
      project_id: "sampleapp-735a6",
      credentials: "config/firebase_auth.json"
    )
 
-   servers_ref = firestore.col("microposts").document("192.168.2.102").collection("collection")    
-   @servers = servers_ref.get
+   server_ref = firestore.col("microposts")
+   @server = server_ref.get do |microposts|
+     microposts.document_id
+   end
   end
 
   def get_from_firestore

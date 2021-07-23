@@ -47,4 +47,20 @@ class MicropostsController < ApplicationController
       @micropost = current_user.microposts.find_by(id: params[:id])
       redirect_to root_url if @micropost.nil?
     end
+    
+    def set_micropost
+      firestore = Google::Cloud::Firestore.new(
+      project_id: "sampleapp-735a6",
+      credentials: "config/firebase_auth.json"
+      )
+      data = {
+        context: @micropost.content,
+        created_at: @micropost.created_at,
+        updated_at: @micropost.updated_at,
+        user_id: @micropost.user_id,
+        address: @micropost.address
+      }
+      microposts_ref = firestore.collection('microposts').document(@micropost.address).collection("collection")
+      added_doc_ref = microposts_ref.add data
+    end    
 end

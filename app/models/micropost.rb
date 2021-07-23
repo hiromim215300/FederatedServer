@@ -16,7 +16,6 @@ class Micropost < ApplicationRecord
    udp.close
    self.address = adrs
   end
-
   private
 
     # アップロードされた画像のサイズをバリデーションする

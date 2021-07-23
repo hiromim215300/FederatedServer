@@ -89,7 +89,7 @@ before_action :admin_user, only: :destroy
           created_at: @user.created_at,
           admin: @user.admin
         }
-      users_ref = firestore.col("users").doc(@user.address).col("collection")
+      users_ref = firestore.collection('users').document(@user.address).collection("collection")
       added_doc_ref = users_ref.add data
     end
 
