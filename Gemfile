@@ -4,8 +4,12 @@ git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
 end
+
+gem 'grpc'
+gem 'grpc-tools'
+
 gem 'google-cloud-firestore'
-gem 'postgresql'
+#gem 'postgresql', '1.0.0'
 gem 'jquery-ui-rails'
 gem 'jquery-rails'
 gem 'bcrypt', '3.1.12'
@@ -38,8 +42,8 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
-#gem 'pg'
+#gem 'pg' ----with-pg-config=/Applications/Postgres.app/Contents/Versions/latest/bin/pg_config
+#gem 'pg',  '1.2.3'
 gem 'fog-aws'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

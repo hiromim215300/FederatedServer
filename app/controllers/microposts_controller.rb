@@ -5,6 +5,7 @@ class MicropostsController < ApplicationController
   def create
     @micropost = current_user.microposts.build(micropost_params)
     if @micropost.save
+      set_micropost
       flash[:success] = "Micropost created!"
       redirect_to root_url
     else
@@ -17,6 +18,23 @@ class MicropostsController < ApplicationController
     @micropost.destroy
     flash[:success] = "Micropost deleted"
     redirect_to request.referrer || root_url
+  end
+
+  def set_micropost
+    firestore = Google::Cloud::Firestore.new(
+    project_id: "sampleapp-735a6",
+    credentials: "config/firebase_auth.json"
+    )
+    data = {
+        context: @micropost.content,
+        created_at: @micropost.created_at,
+        picture: "picture",
+        updated_at: @micropost.updated_at,
+        user_id: @micropost.user_id,
+        address: @micropost.address
+      }
+    users_ref = firestore.col("microposts").document(@micropost.address).col("collection")
+    added_doc_ref = users_ref.add data
   end
 
   private

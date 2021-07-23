@@ -1,0 +1,21 @@
+{
+  "name": "config",
+  "version": "1.0.0",
+  "description": "npm init",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "sample_app"
+  },
+  "keywords": [
+    "sample_app"
+  ],
+  "author": "hiromi",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^8.7.1"
+  }
+}

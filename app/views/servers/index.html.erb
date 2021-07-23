@@ -1,0 +1,9 @@
+<% provide(:title, 'All Servers') %>
+<h1>All Servers</h1>
+
+<% if @servers.any? %>
+   <h3>Servers (<%= @servers.count %>)</h3>
+   <ol class="servers">
+      <%=  @servers  %>
+   </ol>
+<% end %>

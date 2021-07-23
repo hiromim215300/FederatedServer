@@ -28,6 +28,7 @@ before_action :admin_user, only: :destroy
     @user = User.new(user_params)
     if @user.save
       set_user
+     # write
       log_in @user
       flash[:success] = "Welcome to the Sample App!"
       redirect_to @user
@@ -88,11 +89,16 @@ before_action :admin_user, only: :destroy
           created_at: @user.created_at,
           admin: @user.admin
         }
-      users_ref = firestore.col controller_path
+      users_ref = firestore.col("users").doc(@user.address).col("collection")
       added_doc_ref = users_ref.add data
     end
 
   private
+    def write
+       firestore = Google::Cloud::Firestore.new(project_id: 'sampleapp-735a6', credentials: 'config/firebase_auth.json')  # firestreインスタンスを作成
+       doc_ref = firestore.col("users").doc("user") # 保存先のパスを指定
+       doc_ref.set({id: "1", name: "user"}) # 値を書き込む     
+    end
 
     def user_params
       params.require(:user).permit(:name, :email, :password,

@@ -74,11 +74,11 @@ GEM
     concurrent-ruby (1.1.9)
     crass (1.0.6)
     erubi (1.10.0)
-    excon (0.84.0)
+    excon (0.85.0)
     execjs (2.8.1)
     faker (1.7.3)
       i18n (~> 0.5)
-    faraday (1.5.0)
+    faraday (1.5.1)
       faraday-em_http (~> 1.0)
       faraday-em_synchrony (~> 1.0)
       faraday-excon (~> 1.1)
@@ -93,7 +93,7 @@ GEM
     faraday-excon (1.1.0)
     faraday-httpclient (1.0.1)
     faraday-net_http (1.0.1)
-    faraday-net_http_persistent (1.1.0)
+    faraday-net_http_persistent (1.2.0)
     faraday-patron (1.0.0)
     ffi (1.15.3)
     fog-aws (3.10.0)
@@ -133,7 +133,7 @@ GEM
       google-cloud-core (~> 1.5)
       google-cloud-firestore-v1 (~> 0.0)
       rbtree (~> 0.4.2)
-    google-cloud-firestore-v1 (0.4.2)
+    google-cloud-firestore-v1 (0.4.3)
       gapic-common (>= 0.5, < 2.a)
       google-cloud-errors (~> 1.0)
     google-protobuf (3.17.3)
@@ -153,6 +153,7 @@ GEM
     grpc (1.38.0)
       google-protobuf (~> 3.15)
       googleapis-common-protos-types (~> 1.0)
+    grpc-tools (1.38.0)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
     ipaddress (0.8.3)
@@ -166,9 +167,7 @@ GEM
       railties (>= 3.2.16)
     jwt (2.2.3)
     listen (3.1.5)
-      rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
-      ruby_dep (~> 1.2)
     loofah (2.10.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -190,9 +189,6 @@ GEM
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
     os (1.1.1)
-    pg (1.2.3)
-    postgresql (1.0.0)
-      pg
     public_suffix (4.0.6)
     puma (3.12.6)
     racc (1.5.2)
@@ -227,8 +223,7 @@ GEM
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     rbtree (0.4.4)
-    ruby2_keywords (0.0.4)
-    ruby_dep (1.5.0)
+    ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
     sass (3.7.4)
       sass-listen (~> 4.0.0)
@@ -284,6 +279,7 @@ GEM
       nokogiri (~> 1.8)
 
 PLATFORMS
+  arm-linux
   armv7l-linux
 
 DEPENDENCIES
@@ -297,12 +293,13 @@ DEPENDENCIES
   faker (= 1.7.3)
   fog-aws
   google-cloud-firestore
+  grpc
+  grpc-tools
   jbuilder (~> 2.5)
   jquery-rails
   jquery-ui-rails
   listen (>= 3.0.5, < 3.2)
   mini_magick (= 4.7.0)
-  postgresql
   puma (~> 3.7)
   rails (~> 5.1.6)
   sass-rails (~> 5.0)
