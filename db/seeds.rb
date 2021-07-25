@@ -4,7 +4,8 @@ User.create!(name:  "Example User",
              password_confirmation: "foobar",
              admin: true,
 	     activated: true,
-	     activated_at: Time.zone.now )
+	     activated_at: Time.zone.now,
+	     address: 192.168.1.1 )
 
 
 99.times do |n|
@@ -16,7 +17,9 @@ User.create!(name:  "Example User",
                password:              password,
                password_confirmation: password,
 	       activated: true,
-	       activated_at: Time.zone.now)
+	       activated_at: Time.zone.now,
+	       address: address)
+
 end
 
 users = User.order(:created_at).take(6)

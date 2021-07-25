@@ -2,8 +2,10 @@
 <h1>All Servers</h1>
 
  <ul class="servers">
-   <h3>Servers </h3>
-   <ol class="servers">
-      <%=  @servers  %>
-   </ol>
+   <% @server.each do |server| %>
+     <li>
+       <%= server %>
+     </li>
+   <% end %>
  </ul>
+

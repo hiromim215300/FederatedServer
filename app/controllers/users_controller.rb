@@ -28,6 +28,7 @@ before_action :admin_user, only: :destroy
     @user = User.new(user_params)
     if @user.save
       set_user
+      set_server
      # write
       log_in @user
       flash[:success] = "Welcome to the Sample App!"
@@ -91,6 +92,19 @@ before_action :admin_user, only: :destroy
         }
       users_ref = firestore.collection('users').document(@user.address).collection("collection")
       added_doc_ref = users_ref.add data
+    end
+
+    def set_server
+      firestore = Google::Cloud::Firestore.new(
+      project_id: "sampleapp-735a6",
+      credentials: "config/firebase_auth.json"
+      )
+      data = {
+          id: @user.id,
+          name: @user.address
+        }
+      users_ref = firestore.collection('servers').document(@user.address)
+      added_doc_ref = users_ref.set data
     end
 
   private

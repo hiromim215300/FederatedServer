@@ -1,14 +1,1 @@
-<% provide(:title, 'All Servers') %>
-<h1>All Servers</h1>
 
-<%= will_paginate %>
-
-<ul class="servers">
-  <% @servers_ref.cols.each do |cols| %>
-    <li>
-      <%= link_to col.collection_id, servers %>
-    </li>
-  <% end %>
-</ul>
-
-<%= will_paginate %>
