@@ -13,6 +13,8 @@ class User < ApplicationRecord
   before_create :create_activation_digest
   before_create :create_my_address
   validates :name,  presence: true, length: { maximum: 50 }
+#  VALID_ADDRESS_REGEX = /\A[0-9]{3}.[0-9]{2,3}.[0-9]{1,3}.[0-9]{1,3}/
+#  validates :address, presence: true, format: { with: VALID_ADDRESS_REGEX }
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   validates :email, presence: true, length: { maximum: 255 },
                     format: { with: VALID_EMAIL_REGEX },

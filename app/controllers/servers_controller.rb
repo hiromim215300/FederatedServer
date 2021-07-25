@@ -1,5 +1,9 @@
 class ServersController < ApplicationController
   def index
-    @server = Server.paginate(page: params[:page])
+    @servers = Server.paginate(page: params[:page])
+  end
+
+  def show
+    @server = 
   end
 end

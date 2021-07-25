@@ -1,0 +1,49 @@
+/home/hiromi/rails/sample_app/vendor/bundle/ruby/2.5.0/gems/grpc-1.38.0/src/ruby/ext/grpc/objs/opt/src/core/lib/surface/event_string.o: \
+ src/core/lib/surface/event_string.cc \
+ include/grpc/support/port_platform.h \
+ include/grpc/impl/codegen/port_platform.h \
+ src/core/lib/surface/event_string.h include/grpc/grpc.h \
+ include/grpc/status.h include/grpc/impl/codegen/status.h \
+ include/grpc/byte_buffer.h include/grpc/impl/codegen/byte_buffer.h \
+ include/grpc/impl/codegen/grpc_types.h \
+ include/grpc/impl/codegen/compression_types.h \
+ include/grpc/impl/codegen/gpr_types.h include/grpc/impl/codegen/slice.h \
+ include/grpc/impl/codegen/gpr_slice.h include/grpc/slice_buffer.h \
+ include/grpc/slice.h include/grpc/support/sync.h \
+ include/grpc/impl/codegen/sync.h \
+ include/grpc/impl/codegen/sync_generic.h include/grpc/impl/codegen/atm.h \
+ include/grpc/impl/codegen/atm_gcc_atomic.h \
+ include/grpc/impl/codegen/sync_abseil.h \
+ include/grpc/impl/codegen/connectivity_state.h \
+ include/grpc/impl/codegen/propagation_bits.h include/grpc/support/time.h \
+ third_party/abseil-cpp/absl/strings/str_format.h \
+ third_party/abseil-cpp/absl/strings/internal/str_format/arg.h \
+ third_party/abseil-cpp/absl/base/port.h \
+ third_party/abseil-cpp/absl/base/attributes.h \
+ third_party/abseil-cpp/absl/base/config.h \
+ third_party/abseil-cpp/absl/base/options.h \
+ third_party/abseil-cpp/absl/base/policy_checks.h \
+ third_party/abseil-cpp/absl/base/optimization.h \
+ third_party/abseil-cpp/absl/meta/type_traits.h \
+ third_party/abseil-cpp/absl/numeric/int128.h \
+ third_party/abseil-cpp/absl/base/macros.h \
+ third_party/abseil-cpp/absl/numeric/int128_no_intrinsic.inc \
+ third_party/abseil-cpp/absl/strings/internal/str_format/extension.h \
+ third_party/abseil-cpp/absl/strings/internal/str_format/output.h \
+ third_party/abseil-cpp/absl/strings/string_view.h \
+ third_party/abseil-cpp/absl/base/internal/throw_delegate.h \
+ third_party/abseil-cpp/absl/strings/internal/str_format/bind.h \
+ third_party/abseil-cpp/absl/strings/internal/str_format/checker.h \
+ third_party/abseil-cpp/absl/strings/internal/str_format/parser.h \
+ third_party/abseil-cpp/absl/types/span.h \
+ third_party/abseil-cpp/absl/types/internal/span.h \
+ third_party/abseil-cpp/absl/algorithm/algorithm.h \
+ third_party/abseil-cpp/absl/strings/str_join.h \
+ third_party/abseil-cpp/absl/strings/internal/str_join_internal.h \
+ third_party/abseil-cpp/absl/strings/internal/ostringstream.h \
+ third_party/abseil-cpp/absl/strings/internal/resize_uninitialized.h \
+ third_party/abseil-cpp/absl/strings/str_cat.h \
+ third_party/abseil-cpp/absl/strings/numbers.h \
+ third_party/abseil-cpp/absl/numeric/bits.h \
+ third_party/abseil-cpp/absl/numeric/internal/bits.h \
+ include/grpc/support/string_util.h src/core/lib/gpr/string.h

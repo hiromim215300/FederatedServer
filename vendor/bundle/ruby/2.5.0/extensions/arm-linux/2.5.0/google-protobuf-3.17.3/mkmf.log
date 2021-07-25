@@ -1,0 +1,23 @@
+find_header: checking for third_party/wyhash/wyhash.h in ../../../..... -------------------- yes
+
+"gcc -o conftest -I/usr/include/arm-linux-gnueabihf/ruby-2.5.0 -I/usr/include/ruby-2.5.0/ruby/backward -I/usr/include/ruby-2.5.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2 -D_FILE_OFFSET_BITS=64  -g -O2 -fdebug-prefix-map=/build/ruby2.5-Omltnv/ruby2.5-2.5.5=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC -std=gnu99 -O3 -DNDEBUG -fvisibility=hidden -Wall -Wsign-compare -Wno-declaration-after-statement conftest.c  -L. -L/usr/lib/arm-linux-gnueabihf -L. -Wl,-z,relro -Wl,-z,now -fstack-protector -rdynamic -Wl,-export-dynamic -Wl,-wrap,memcpy     -lruby-2.5  -lpthread -lgmp -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return 0;
+6: }
+/* end */
+
+"gcc -E -I/usr/include/arm-linux-gnueabihf/ruby-2.5.0 -I/usr/include/ruby-2.5.0/ruby/backward -I/usr/include/ruby-2.5.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2 -D_FILE_OFFSET_BITS=64  -g -O2 -fdebug-prefix-map=/build/ruby2.5-Omltnv/ruby2.5-2.5.5=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC -std=gnu99 -O3 -DNDEBUG -fvisibility=hidden -Wall -Wsign-compare -Wno-declaration-after-statement  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <third_party/wyhash/wyhash.h>
+/* end */
+
+--------------------
+

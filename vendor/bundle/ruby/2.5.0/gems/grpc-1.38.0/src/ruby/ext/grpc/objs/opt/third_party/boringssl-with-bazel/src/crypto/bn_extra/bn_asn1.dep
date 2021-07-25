@@ -1,0 +1,10 @@
+/home/hiromi/rails/sample_app/vendor/bundle/ruby/2.5.0/gems/grpc-1.38.0/src/ruby/ext/grpc/objs/opt/third_party/boringssl-with-bazel/src/crypto/bn_extra/bn_asn1.o: \
+ third_party/boringssl-with-bazel/src/crypto/bn_extra/bn_asn1.c \
+ third_party/boringssl-with-bazel/src/include/openssl/bn.h \
+ third_party/boringssl-with-bazel/src/include/openssl/base.h \
+ third_party/boringssl-with-bazel/src/include/openssl/is_boringssl.h \
+ third_party/boringssl-with-bazel/src/include/openssl/opensslconf.h \
+ third_party/boringssl-with-bazel/src/include/openssl/thread.h \
+ third_party/boringssl-with-bazel/src/include/openssl/bytestring.h \
+ third_party/boringssl-with-bazel/src/include/openssl/span.h \
+ third_party/boringssl-with-bazel/src/include/openssl/err.h

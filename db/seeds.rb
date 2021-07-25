@@ -5,13 +5,14 @@ User.create!(name:  "Example User",
              admin: true,
 	     activated: true,
 	     activated_at: Time.zone.now,
-	     address: 192.168.1.1 )
+	     address: "192.168.1.1" )
 
-
+ 
 99.times do |n|
   name  = Faker::Name.name
   email = "example-#{n+1}@railstutorial.org"
   password = "password"
+  address = Faker::Internet.ip_v4_address
   User.create!(name:  name,
                email: email,
                password:              password,

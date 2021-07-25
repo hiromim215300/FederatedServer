@@ -1,11 +1,14 @@
 <% provide(:title, 'All Servers') %>
 <h1>All Servers</h1>
 
- <ul class="servers">
-   <% @server.each do |server| %>
-     <li>
-       <%= server %>
-     </li>
-   <% end %>
- </ul>
+<%= will_paginate %>
 
+<ul class "servers">
+  <% @servers.each do |server| %>
+    <li>
+      <%= link_to server.name, server %>
+    </li>
+  <% end %>
+</ul>
+
+<%= will_paginate %>

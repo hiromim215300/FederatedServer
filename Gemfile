@@ -4,17 +4,17 @@ git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
 end
-
+#gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
 gem 'grpc'
 gem 'grpc-tools'
-
+gem 'rb-readline'
 gem 'google-cloud-firestore'
 #gem 'postgresql', '1.0.0'
 gem 'jquery-ui-rails'
 gem 'jquery-rails'
 gem 'bcrypt', '3.1.12'
 gem 'bootstrap-sass', '3.3.7'
-gem 'faker', '1.7.3'
+#gem 'faker', '1.7.3'
 gem 'carrierwave',             '1.2.2'
 gem 'mini_magick',             '4.7.0'
 gem 'will_paginate', '3.1.6'

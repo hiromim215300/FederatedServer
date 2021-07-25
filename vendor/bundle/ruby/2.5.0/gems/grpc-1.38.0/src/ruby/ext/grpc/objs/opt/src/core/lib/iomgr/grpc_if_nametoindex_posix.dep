@@ -1,0 +1,6 @@
+/home/hiromi/rails/sample_app/vendor/bundle/ruby/2.5.0/gems/grpc-1.38.0/src/ruby/ext/grpc/objs/opt/src/core/lib/iomgr/grpc_if_nametoindex_posix.o: \
+ src/core/lib/iomgr/grpc_if_nametoindex_posix.cc \
+ include/grpc/support/port_platform.h \
+ include/grpc/impl/codegen/port_platform.h src/core/lib/iomgr/port.h \
+ src/core/lib/iomgr/grpc_if_nametoindex.h include/grpc/support/log.h \
+ include/grpc/impl/codegen/log.h

@@ -1,0 +1,19 @@
+/home/hiromi/rails/sample_app/vendor/bundle/ruby/2.5.0/gems/grpc-1.38.0/src/ruby/ext/grpc/objs/opt/third_party/boringssl-with-bazel/src/crypto/bio/bio.o: \
+ third_party/boringssl-with-bazel/src/crypto/bio/bio.c \
+ third_party/boringssl-with-bazel/src/include/openssl/bio.h \
+ third_party/boringssl-with-bazel/src/include/openssl/base.h \
+ third_party/boringssl-with-bazel/src/include/openssl/is_boringssl.h \
+ third_party/boringssl-with-bazel/src/include/openssl/opensslconf.h \
+ third_party/boringssl-with-bazel/src/include/openssl/buffer.h \
+ third_party/boringssl-with-bazel/src/include/openssl/buf.h \
+ third_party/boringssl-with-bazel/src/include/openssl/err.h \
+ third_party/boringssl-with-bazel/src/include/openssl/ex_data.h \
+ third_party/boringssl-with-bazel/src/include/openssl/stack.h \
+ third_party/boringssl-with-bazel/src/include/openssl/type_check.h \
+ third_party/boringssl-with-bazel/src/include/openssl/thread.h \
+ third_party/boringssl-with-bazel/src/include/openssl/asn1.h \
+ third_party/boringssl-with-bazel/src/include/openssl/bn.h \
+ third_party/boringssl-with-bazel/src/include/openssl/mem.h \
+ third_party/boringssl-with-bazel/src/crypto/bio/../internal.h \
+ third_party/boringssl-with-bazel/src/include/openssl/crypto.h \
+ third_party/boringssl-with-bazel/src/include/openssl/sha.h

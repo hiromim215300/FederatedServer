@@ -1,0 +1,20 @@
+/home/hiromi/rails/sample_app/vendor/bundle/ruby/2.5.0/gems/grpc-1.38.0/src/ruby/ext/grpc/objs/opt/src/core/lib/gprpp/arena.o: \
+ src/core/lib/gprpp/arena.cc include/grpc/support/port_platform.h \
+ include/grpc/impl/codegen/port_platform.h src/core/lib/gprpp/arena.h \
+ include/grpc/support/alloc.h include/grpc/support/sync.h \
+ include/grpc/impl/codegen/gpr_types.h include/grpc/impl/codegen/sync.h \
+ include/grpc/impl/codegen/sync_generic.h include/grpc/impl/codegen/atm.h \
+ include/grpc/impl/codegen/atm_gcc_atomic.h \
+ include/grpc/impl/codegen/sync_abseil.h src/core/lib/gpr/alloc.h \
+ src/core/lib/gpr/spinlock.h include/grpc/support/atm.h \
+ src/core/lib/gprpp/atomic.h include/grpc/support/log.h \
+ include/grpc/impl/codegen/log.h src/core/lib/gprpp/memory.h \
+ third_party/abseil-cpp/absl/memory/memory.h \
+ third_party/abseil-cpp/absl/base/macros.h \
+ third_party/abseil-cpp/absl/base/attributes.h \
+ third_party/abseil-cpp/absl/base/config.h \
+ third_party/abseil-cpp/absl/base/options.h \
+ third_party/abseil-cpp/absl/base/policy_checks.h \
+ third_party/abseil-cpp/absl/base/optimization.h \
+ third_party/abseil-cpp/absl/base/port.h \
+ third_party/abseil-cpp/absl/meta/type_traits.h

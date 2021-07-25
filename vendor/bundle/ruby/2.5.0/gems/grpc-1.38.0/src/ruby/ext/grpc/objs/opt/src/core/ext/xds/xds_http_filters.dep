@@ -1,0 +1,128 @@
+/home/hiromi/rails/sample_app/vendor/bundle/ruby/2.5.0/gems/grpc-1.38.0/src/ruby/ext/grpc/objs/opt/src/core/ext/xds/xds_http_filters.o: \
+ src/core/ext/xds/xds_http_filters.cc \
+ include/grpc/support/port_platform.h \
+ include/grpc/impl/codegen/port_platform.h \
+ src/core/ext/xds/xds_http_filters.h \
+ third_party/abseil-cpp/absl/status/statusor.h \
+ third_party/abseil-cpp/absl/base/attributes.h \
+ third_party/abseil-cpp/absl/base/config.h \
+ third_party/abseil-cpp/absl/base/options.h \
+ third_party/abseil-cpp/absl/base/policy_checks.h \
+ third_party/abseil-cpp/absl/meta/type_traits.h \
+ third_party/abseil-cpp/absl/status/internal/statusor_internal.h \
+ third_party/abseil-cpp/absl/status/status.h \
+ third_party/abseil-cpp/absl/container/inlined_vector.h \
+ third_party/abseil-cpp/absl/algorithm/algorithm.h \
+ third_party/abseil-cpp/absl/base/internal/throw_delegate.h \
+ third_party/abseil-cpp/absl/base/macros.h \
+ third_party/abseil-cpp/absl/base/optimization.h \
+ third_party/abseil-cpp/absl/base/port.h \
+ third_party/abseil-cpp/absl/container/internal/inlined_vector.h \
+ third_party/abseil-cpp/absl/container/internal/compressed_tuple.h \
+ third_party/abseil-cpp/absl/utility/utility.h \
+ third_party/abseil-cpp/absl/base/internal/inline_variable.h \
+ third_party/abseil-cpp/absl/base/internal/identity.h \
+ third_party/abseil-cpp/absl/base/internal/invoke.h \
+ third_party/abseil-cpp/absl/memory/memory.h \
+ third_party/abseil-cpp/absl/types/span.h \
+ third_party/abseil-cpp/absl/types/internal/span.h \
+ third_party/abseil-cpp/absl/status/internal/status_internal.h \
+ third_party/abseil-cpp/absl/strings/cord.h \
+ third_party/abseil-cpp/absl/base/internal/endian.h \
+ third_party/abseil-cpp/absl/base/casts.h \
+ third_party/abseil-cpp/absl/base/internal/unaligned_access.h \
+ third_party/abseil-cpp/absl/base/internal/per_thread_tls.h \
+ third_party/abseil-cpp/absl/functional/function_ref.h \
+ third_party/abseil-cpp/absl/functional/internal/function_ref.h \
+ third_party/abseil-cpp/absl/strings/internal/cord_internal.h \
+ third_party/abseil-cpp/absl/strings/string_view.h \
+ third_party/abseil-cpp/absl/strings/internal/cord_rep_ring.h \
+ third_party/abseil-cpp/absl/container/internal/layout.h \
+ third_party/abseil-cpp/absl/strings/str_cat.h \
+ third_party/abseil-cpp/absl/strings/numbers.h \
+ third_party/abseil-cpp/absl/numeric/bits.h \
+ third_party/abseil-cpp/absl/numeric/internal/bits.h \
+ third_party/abseil-cpp/absl/numeric/int128.h \
+ third_party/abseil-cpp/absl/numeric/int128_no_intrinsic.inc \
+ third_party/abseil-cpp/absl/strings/internal/cord_rep_flat.h \
+ third_party/abseil-cpp/absl/strings/internal/cord_rep_ring_reader.h \
+ third_party/abseil-cpp/absl/strings/internal/resize_uninitialized.h \
+ third_party/abseil-cpp/absl/strings/internal/string_constant.h \
+ third_party/abseil-cpp/absl/types/optional.h \
+ third_party/abseil-cpp/absl/types/bad_optional_access.h \
+ third_party/abseil-cpp/absl/types/internal/optional.h \
+ third_party/abseil-cpp/absl/types/variant.h \
+ third_party/abseil-cpp/absl/types/internal/variant.h \
+ third_party/abseil-cpp/absl/types/bad_variant_access.h \
+ src/core/ext/upb-generated/google/protobuf/any.upb.h \
+ third_party/upb/upb/msg.h third_party/upb/upb/table.int.h \
+ third_party/upb/upb/upb.h third_party/upb/upb/port_def.inc \
+ third_party/upb/upb/port_undef.inc third_party/upb/upb/decode.h \
+ third_party/upb/upb/decode_fast.h third_party/upb/upb/encode.h \
+ third_party/upb/upb/def.h \
+ src/core/ext/upb-generated/google/protobuf/descriptor.upb.h \
+ include/grpc/grpc.h include/grpc/status.h \
+ include/grpc/impl/codegen/status.h include/grpc/byte_buffer.h \
+ include/grpc/impl/codegen/byte_buffer.h \
+ include/grpc/impl/codegen/grpc_types.h \
+ include/grpc/impl/codegen/compression_types.h \
+ include/grpc/impl/codegen/gpr_types.h include/grpc/impl/codegen/slice.h \
+ include/grpc/impl/codegen/gpr_slice.h include/grpc/slice_buffer.h \
+ include/grpc/slice.h include/grpc/support/sync.h \
+ include/grpc/impl/codegen/sync.h \
+ include/grpc/impl/codegen/sync_generic.h include/grpc/impl/codegen/atm.h \
+ include/grpc/impl/codegen/atm_gcc_atomic.h \
+ include/grpc/impl/codegen/sync_abseil.h \
+ include/grpc/impl/codegen/connectivity_state.h \
+ include/grpc/impl/codegen/propagation_bits.h include/grpc/support/time.h \
+ src/core/lib/channel/channel_stack.h include/grpc/support/log.h \
+ include/grpc/impl/codegen/log.h src/core/lib/debug/trace.h \
+ include/grpc/support/atm.h src/core/lib/gprpp/global_config.h \
+ src/core/lib/gprpp/global_config_env.h \
+ src/core/lib/gprpp/global_config_generic.h src/core/lib/gprpp/memory.h \
+ include/grpc/support/alloc.h src/core/lib/gprpp/global_config_custom.h \
+ src/core/lib/gpr/time_precise.h src/core/lib/gprpp/arena.h \
+ src/core/lib/gpr/alloc.h src/core/lib/gpr/spinlock.h \
+ src/core/lib/gprpp/atomic.h src/core/lib/iomgr/call_combiner.h \
+ src/core/lib/gprpp/mpscq.h src/core/lib/gprpp/sync.h \
+ third_party/abseil-cpp/absl/synchronization/mutex.h \
+ third_party/abseil-cpp/absl/base/const_init.h \
+ third_party/abseil-cpp/absl/base/internal/low_level_alloc.h \
+ third_party/abseil-cpp/absl/base/internal/thread_identity.h \
+ third_party/abseil-cpp/absl/base/internal/tsan_mutex_interface.h \
+ third_party/abseil-cpp/absl/base/thread_annotations.h \
+ third_party/abseil-cpp/absl/base/internal/thread_annotations.h \
+ third_party/abseil-cpp/absl/synchronization/internal/kernel_timeout.h \
+ third_party/abseil-cpp/absl/base/internal/raw_logging.h \
+ third_party/abseil-cpp/absl/base/internal/atomic_hook.h \
+ third_party/abseil-cpp/absl/base/log_severity.h \
+ third_party/abseil-cpp/absl/time/clock.h \
+ third_party/abseil-cpp/absl/time/time.h \
+ third_party/abseil-cpp/absl/time/civil_time.h \
+ third_party/abseil-cpp/absl/time/internal/cctz/include/cctz/civil_time.h \
+ third_party/abseil-cpp/absl/time/internal/cctz/include/cctz/civil_time_detail.h \
+ third_party/abseil-cpp/absl/time/internal/cctz/include/cctz/time_zone.h \
+ third_party/abseil-cpp/absl/synchronization/internal/per_thread_sem.h \
+ third_party/abseil-cpp/absl/synchronization/internal/create_thread_identity.h \
+ src/core/lib/gprpp/time_util.h src/core/lib/gprpp/ref_counted.h \
+ src/core/lib/gprpp/debug_location.h src/core/lib/gprpp/ref_counted_ptr.h \
+ src/core/lib/iomgr/closure.h src/core/lib/gprpp/manual_constructor.h \
+ src/core/lib/iomgr/error.h src/core/lib/gprpp/status_helper.h \
+ src/core/lib/profiling/timers.h src/core/lib/iomgr/dynamic_annotations.h \
+ src/core/lib/iomgr/exec_ctx.h include/grpc/support/cpu.h \
+ src/core/lib/gpr/tls.h src/core/lib/gpr/tls_stdcpp.h \
+ src/core/lib/gprpp/fork.h src/core/lib/iomgr/polling_entity.h \
+ src/core/lib/iomgr/pollset.h src/core/lib/iomgr/pollset_set.h \
+ src/core/lib/transport/transport.h src/core/lib/channel/context.h \
+ src/core/lib/gprpp/orphanable.h src/core/lib/iomgr/endpoint.h \
+ src/core/lib/iomgr/resource_quota.h src/core/lib/slice/slice_internal.h \
+ src/core/lib/gpr/murmur_hash.h src/core/lib/slice/slice_utils.h \
+ src/core/lib/transport/static_metadata.h \
+ src/core/lib/transport/metadata.h src/core/lib/gpr/useful.h \
+ src/core/lib/transport/byte_stream.h \
+ src/core/lib/transport/connectivity_state.h \
+ src/core/lib/iomgr/work_serializer.h \
+ src/core/lib/transport/metadata_batch.h src/core/lib/json/json.h \
+ src/core/ext/upb-generated/envoy/extensions/filters/http/router/v3/router.upb.h \
+ src/core/ext/upbdefs-generated/envoy/extensions/filters/http/router/v3/router.upbdefs.h \
+ src/core/ext/xds/xds_http_fault_filter.h

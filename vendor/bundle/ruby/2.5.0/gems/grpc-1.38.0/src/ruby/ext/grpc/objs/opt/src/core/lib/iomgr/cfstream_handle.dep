@@ -1,0 +1,15 @@
+/home/hiromi/rails/sample_app/vendor/bundle/ruby/2.5.0/gems/grpc-1.38.0/src/ruby/ext/grpc/objs/opt/src/core/lib/iomgr/cfstream_handle.o: \
+ src/core/lib/iomgr/cfstream_handle.cc \
+ include/grpc/support/port_platform.h \
+ include/grpc/impl/codegen/port_platform.h src/core/lib/gprpp/memory.h \
+ include/grpc/support/alloc.h include/grpc/support/log.h \
+ include/grpc/impl/codegen/log.h \
+ third_party/abseil-cpp/absl/memory/memory.h \
+ third_party/abseil-cpp/absl/base/macros.h \
+ third_party/abseil-cpp/absl/base/attributes.h \
+ third_party/abseil-cpp/absl/base/config.h \
+ third_party/abseil-cpp/absl/base/options.h \
+ third_party/abseil-cpp/absl/base/policy_checks.h \
+ third_party/abseil-cpp/absl/base/optimization.h \
+ third_party/abseil-cpp/absl/base/port.h \
+ third_party/abseil-cpp/absl/meta/type_traits.h src/core/lib/iomgr/port.h

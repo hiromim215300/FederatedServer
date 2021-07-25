@@ -1,0 +1,4 @@
+/home/hiromi/rails/sample_app/vendor/bundle/ruby/2.5.0/gems/grpc-1.38.0/src/ruby/ext/grpc/objs/opt/third_party/upb/upb/upb.o: \
+ third_party/upb/upb/upb.c third_party/upb/upb/upb.int.h \
+ third_party/upb/upb/upb.h third_party/upb/upb/port_def.inc \
+ third_party/upb/upb/port_undef.inc

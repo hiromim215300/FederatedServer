@@ -1,0 +1,15 @@
+/home/hiromi/rails/sample_app/vendor/bundle/ruby/2.5.0/gems/grpc-1.38.0/src/ruby/ext/grpc/objs/opt/third_party/abseil-cpp/absl/hash/internal/city.o: \
+ third_party/abseil-cpp/absl/hash/internal/city.cc \
+ third_party/abseil-cpp/absl/hash/internal/city.h \
+ third_party/abseil-cpp/absl/base/config.h \
+ third_party/abseil-cpp/absl/base/options.h \
+ third_party/abseil-cpp/absl/base/policy_checks.h \
+ third_party/abseil-cpp/absl/base/internal/endian.h \
+ third_party/abseil-cpp/absl/base/casts.h \
+ third_party/abseil-cpp/absl/base/internal/identity.h \
+ third_party/abseil-cpp/absl/base/macros.h \
+ third_party/abseil-cpp/absl/base/attributes.h \
+ third_party/abseil-cpp/absl/base/optimization.h \
+ third_party/abseil-cpp/absl/base/port.h \
+ third_party/abseil-cpp/absl/meta/type_traits.h \
+ third_party/abseil-cpp/absl/base/internal/unaligned_access.h

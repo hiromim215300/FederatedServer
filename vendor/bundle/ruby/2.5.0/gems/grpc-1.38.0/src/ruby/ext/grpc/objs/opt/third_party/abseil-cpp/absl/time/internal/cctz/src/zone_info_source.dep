@@ -1,0 +1,6 @@
+/home/hiromi/rails/sample_app/vendor/bundle/ruby/2.5.0/gems/grpc-1.38.0/src/ruby/ext/grpc/objs/opt/third_party/abseil-cpp/absl/time/internal/cctz/src/zone_info_source.o: \
+ third_party/abseil-cpp/absl/time/internal/cctz/src/zone_info_source.cc \
+ third_party/abseil-cpp/absl/time/internal/cctz/include/cctz/zone_info_source.h \
+ third_party/abseil-cpp/absl/base/config.h \
+ third_party/abseil-cpp/absl/base/options.h \
+ third_party/abseil-cpp/absl/base/policy_checks.h

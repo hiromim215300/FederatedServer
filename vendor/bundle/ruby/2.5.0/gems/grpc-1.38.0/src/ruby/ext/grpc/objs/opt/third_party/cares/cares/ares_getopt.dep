@@ -1,0 +1,3 @@
+/home/hiromi/rails/sample_app/vendor/bundle/ruby/2.5.0/gems/grpc-1.38.0/src/ruby/ext/grpc/objs/opt/third_party/cares/cares/ares_getopt.o: \
+ third_party/cares/cares/ares_getopt.c \
+ third_party/cares/cares/ares_getopt.h

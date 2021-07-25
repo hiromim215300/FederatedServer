@@ -1,0 +1,4 @@
+/home/hiromi/rails/sample_app/vendor/bundle/ruby/2.5.0/gems/grpc-1.38.0/src/ruby/ext/grpc/objs/opt/third_party/address_sorting/address_sorting.o: \
+ third_party/address_sorting/address_sorting.c \
+ third_party/address_sorting/address_sorting_internal.h \
+ third_party/address_sorting/include/address_sorting/address_sorting.h

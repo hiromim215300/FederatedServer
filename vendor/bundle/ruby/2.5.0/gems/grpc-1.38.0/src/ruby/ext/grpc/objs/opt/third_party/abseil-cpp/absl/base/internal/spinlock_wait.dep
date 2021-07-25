@@ -1,0 +1,10 @@
+/home/hiromi/rails/sample_app/vendor/bundle/ruby/2.5.0/gems/grpc-1.38.0/src/ruby/ext/grpc/objs/opt/third_party/abseil-cpp/absl/base/internal/spinlock_wait.o: \
+ third_party/abseil-cpp/absl/base/internal/spinlock_wait.cc \
+ third_party/abseil-cpp/absl/base/internal/spinlock_wait.h \
+ third_party/abseil-cpp/absl/base/internal/scheduling_mode.h \
+ third_party/abseil-cpp/absl/base/config.h \
+ third_party/abseil-cpp/absl/base/options.h \
+ third_party/abseil-cpp/absl/base/policy_checks.h \
+ third_party/abseil-cpp/absl/base/internal/spinlock_linux.inc \
+ third_party/abseil-cpp/absl/base/attributes.h \
+ third_party/abseil-cpp/absl/base/internal/errno_saver.h

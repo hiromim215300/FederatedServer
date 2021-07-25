@@ -1,0 +1,11 @@
+/home/hiromi/rails/sample_app/vendor/bundle/ruby/2.5.0/gems/grpc-1.38.0/src/ruby/ext/grpc/objs/opt/src/core/ext/upb-generated/envoy/extensions/transport_sockets/tls/v3/cert.upb.o: \
+ src/core/ext/upb-generated/envoy/extensions/transport_sockets/tls/v3/cert.upb.c \
+ third_party/upb/upb/msg.h third_party/upb/upb/table.int.h \
+ third_party/upb/upb/upb.h third_party/upb/upb/port_def.inc \
+ third_party/upb/upb/port_undef.inc \
+ src/core/ext/upb-generated/envoy/extensions/transport_sockets/tls/v3/cert.upb.h \
+ third_party/upb/upb/decode.h third_party/upb/upb/decode_fast.h \
+ third_party/upb/upb/encode.h \
+ src/core/ext/upb-generated/envoy/extensions/transport_sockets/tls/v3/common.upb.h \
+ src/core/ext/upb-generated/envoy/extensions/transport_sockets/tls/v3/secret.upb.h \
+ src/core/ext/upb-generated/envoy/extensions/transport_sockets/tls/v3/tls.upb.h

@@ -1,0 +1,43 @@
+current directory: /home/hiromi/rails/sample_app/vendor/bundle/ruby/2.5.0/gems/google-protobuf-3.17.3/ext/google/protobuf_c
+/usr/bin/ruby2.5 -r ./siteconf20210726-24341-g69rh5.rb extconf.rb
+checking for third_party/wyhash/wyhash.h in ../../../..... yes
+creating Makefile
+
+current directory: /home/hiromi/rails/sample_app/vendor/bundle/ruby/2.5.0/gems/google-protobuf-3.17.3/ext/google/protobuf_c
+make "DESTDIR=" clean
+
+current directory: /home/hiromi/rails/sample_app/vendor/bundle/ruby/2.5.0/gems/google-protobuf-3.17.3/ext/google/protobuf_c
+make "DESTDIR="
+compiling convert.c
+compiling defs.c
+defs.c: In function ‘Descriptor_initialize’:
+defs.c:439:18: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   self->msgdef = (const upb_msgdef*)NUM2ULL(ptr);
+                  ^
+defs.c: In function ‘FileDescriptor_initialize’:
+defs.c:626:19: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   self->filedef = (const upb_filedef*)NUM2ULL(ptr);
+                   ^
+defs.c: In function ‘FieldDescriptor_initialize’:
+defs.c:731:20: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   self->fielddef = (const upb_fielddef*)NUM2ULL(ptr);
+                    ^
+defs.c: In function ‘OneofDescriptor_initialize’:
+defs.c:1132:20: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   self->oneofdef = (const upb_oneofdef*)NUM2ULL(ptr);
+                    ^
+defs.c: In function ‘EnumDescriptor_initialize’:
+defs.c:1240:19: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   self->enumdef = (const upb_enumdef*)NUM2ULL(ptr);
+                   ^
+compiling map.c
+compiling message.c
+compiling protobuf.c
+compiling repeated_field.c
+compiling ruby-upb.c
+compiling wrap_memcpy.c
+linking shared-object google/protobuf_c.so
+
+current directory: /home/hiromi/rails/sample_app/vendor/bundle/ruby/2.5.0/gems/google-protobuf-3.17.3/ext/google/protobuf_c
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 protobuf_c.so ./.gem.20210726-24341-mx2glr/google

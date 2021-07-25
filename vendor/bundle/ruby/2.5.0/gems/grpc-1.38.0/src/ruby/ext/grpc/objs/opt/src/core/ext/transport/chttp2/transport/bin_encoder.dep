@@ -1,0 +1,13 @@
+/home/hiromi/rails/sample_app/vendor/bundle/ruby/2.5.0/gems/grpc-1.38.0/src/ruby/ext/grpc/objs/opt/src/core/ext/transport/chttp2/transport/bin_encoder.o: \
+ src/core/ext/transport/chttp2/transport/bin_encoder.cc \
+ include/grpc/support/port_platform.h \
+ include/grpc/impl/codegen/port_platform.h \
+ src/core/ext/transport/chttp2/transport/bin_encoder.h \
+ include/grpc/slice.h include/grpc/impl/codegen/slice.h \
+ include/grpc/impl/codegen/gpr_slice.h include/grpc/support/sync.h \
+ include/grpc/impl/codegen/gpr_types.h include/grpc/impl/codegen/sync.h \
+ include/grpc/impl/codegen/sync_generic.h include/grpc/impl/codegen/atm.h \
+ include/grpc/impl/codegen/atm_gcc_atomic.h \
+ include/grpc/impl/codegen/sync_abseil.h include/grpc/support/log.h \
+ include/grpc/impl/codegen/log.h \
+ src/core/ext/transport/chttp2/transport/huffsyms.h
